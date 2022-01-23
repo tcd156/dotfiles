@@ -98,25 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-export GITHUB_TOKEN="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"
-
 eval "$(starship init zsh)"
 
 alias ls='exa --icons'
 alias ll='exa -lahm --icons'
 alias vim="nvim" 
-
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/ruby@2.6/bin:$PATH"
-export PATH="${HOME}/Code/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin:$PATH"
-export PATH="/usr/local/opt/ruby@2.6/bin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="/usr/local/opt/ruby@2.7/bin:$PATH"
-export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
-
-# Added by Krypton
-export GPG_TTY=$(tty)
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
