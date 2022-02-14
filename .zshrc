@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/tylerdennis/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,7 +103,7 @@ eval "$(starship init zsh)"
 alias ls='exa --icons'
 alias ll='exa -lahm --icons'
 alias vim="nvim" 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
-alias config='/usr/bin/git --git-dir=/Users/tylerdennis/.cfg/ --work-tree=/Users/tylerdennis'
